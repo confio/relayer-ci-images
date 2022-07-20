@@ -11,4 +11,5 @@ WORKDIR /opt
 
 COPY scripts/* /opt
 
+ENTRYPOINT [ ]
 CMD [ "/opt/run.sh" ]
