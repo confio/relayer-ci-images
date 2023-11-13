@@ -1,9 +1,9 @@
 # no apt to install jq, so we copy it over
-FROM cosmwasm/wasmd:0.27.0
+FROM cosmwasm/wasmd:v0.31.0
 
 USER root
 
-RUN apt install -y jq
+RUN apk add --no-cache jq
 
 WORKDIR /opt
 
